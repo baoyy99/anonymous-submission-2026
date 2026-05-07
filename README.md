@@ -15,8 +15,8 @@
    ```
 ### Data Preparation
 To accommodate anonymity requirements, please refer to the commonly used benchmark library [TSlib](https://github.com/thuml/Time-Series-Library) for the dataset acquisition path. 
-Create a separate folder named ```./dataset``` and place all the CSV files in this directory. 
-**Note**: Place the CSV files directly into this directory, such as "./dataset/ETTh1.csv"
+Create a separate folder named ```./dataset2026``` and place all the CSV files in this directory. 
+**Note**: Place the CSV files directly into this directory, such as "./dataset2026/ETTh1.csv"
 
 ### Train and Evaluate
 We provide the experiment scripts for all benchmarks under the folder `./scripts/`. You can reproduce the experiment results as the following examples:
