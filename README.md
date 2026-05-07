@@ -1,23 +1,22 @@
-# Anonymous Code Repository
+# TAQ
+ 
+## Getting Started
 
-This repository contains the code for the anonymous submission.
+### Installation
+1. Create a new Conda environment.
+   ```bash
+   conda create -n taq python=3.11
+   conda activate taq
+   ```
 
-## Requirements
+2. Install Core Dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-- Python 3.x
-- NumPy
-
-## Files
-
-- `paper_math_new.py`: LaTeX table generation script
-- `loss_factory.py`: Loss functions implementation
-
-## Usage
+### Train and Evaluate
+We provide the experiment scripts for all benchmarks under the folder `./scripts/`. You can reproduce the experiment results as the following examples:
 
 ```bash
-python paper_math_new.py
+bash ./scripts/TQNet.sh
 ```
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
