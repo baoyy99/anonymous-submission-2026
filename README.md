@@ -26,9 +26,7 @@ bash scripts/TQNet/TQNet_B.sh
 
 
 ## Project Overview
-This repository contains the code implementation for the paper "TAQ". To adhere to double-blind review principles and protect intellectual property, we adopt a **phased open-source strategy**:
-- **Review Phase**: Provide all non-core code to ensure reviewers can understand the project structure of our method.
-- **Acceptance Phase**: Fully open-source all code, data, and models to guarantee experimental reproducibility.
+This repository provides an anonymized implementation of TAQ for peer review, including the core loss function and the training and evaluation code needed to reproduce the main experimental results. A public release of the code and experiment configurations is planned upon acceptance. Public datasets and pretrained models will be referenced through their original sources, subject to their respective licenses.
 
 ## Repository Structure
 ```
