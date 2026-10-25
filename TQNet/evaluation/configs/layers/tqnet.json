@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "model": "TQNet",
+  "groups": {
+    "input_embedding": [
+      "^(module\\.)?temporalQuery$",
+      "^(module\\.)?channelAggregator\\.",
+      "^(module\\.)?input_proj\\."
+    ],
+    "temporal_blocks": [
+      "^(module\\.)?model\\."
+    ],
+    "prediction_head": [
+      "^(module\\.)?output_proj\\."
+    ]
+  }
+}

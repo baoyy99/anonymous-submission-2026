@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "model": "iTransformer",
+  "groups": {
+    "input_embedding": [
+      "^(module\\.)?enc_embedding\\."
+    ],
+    "temporal_blocks": [
+      "^(module\\.)?encoder\\."
+    ],
+    "prediction_head": [
+      "^(module\\.)?projector\\."
+    ]
+  }
+}

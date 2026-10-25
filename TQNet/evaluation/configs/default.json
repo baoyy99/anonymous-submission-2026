@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "training_record": {
+    "enabled": true,
+    "record_gradient_clipping": false,
+    "gradient_clip_max_norm": null,
+    "diagnostic_checkpoints": {
+      "enabled": false,
+      "steps": [],
+      "keep_best_and_final": true
+    }
+  },
+  "test_evaluation": {
+    "save_predictions": false,
+    "save_scaled_predictions": false,
+    "save_window_manifest": true,
+    "save_partition_artifacts": false,
+    "save_compatibility_npz": false,
+    "compatibility_npz_max_bytes": 536870912
+  },
+  "processing": {
+    "chunk_samples": 32,
+    "margin_quantile_sample_cap": 1000000
+  },
+  "validation": {
+    "fail_fast": true,
+    "require_original_scale": true,
+    "require_timestamps": true,
+    "require_ordered_indices": true,
+    "nonfinite_policy": "error",
+    "empty_quadrant_policy": "report_na",
+    "legacy_metric_tolerance": 0.00001
+  },
+  "partition": {
+    "ema_alpha": 0.3
+  },
+  "metrics": {
+    "modules": [
+      "point_metrics",
+      "quadrant_metrics",
+      "regional_behavior",
+      "shape_metrics",
+      "state_coverage",
+      "partition_diagnostics",
+      "resource_metrics"
+    ],
+    "per_channel": true,
+    "per_horizon_step": true,
+    "save_per_sample_candidates": false,
+    "state_high_quantile": 0.9,
+    "state_low_quantile": 0.1
+  },
+  "gradient_diagnostics": {
+    "enabled": false,
+    "update_parameters": false,
+    "save_full_gradients": false
+  },
+  "external_cost": {
+    "enabled": false,
+    "threshold_quantiles": [0.7, 0.8, 0.9],
+    "cost_ratios": [1.5, 2.0, 4.0, 8.0]
+  }
+}

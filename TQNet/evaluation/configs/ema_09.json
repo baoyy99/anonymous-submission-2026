@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "partition": {
+    "ema_alpha": 0.9
+  }
+}

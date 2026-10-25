@@ -1,0 +1,52 @@
+TAQ — Peer Review License
+
+Copyright (c) 2026 the authors of the accompanying TAQ submission.
+Author identities are withheld for double-blind peer review.
+All rights reserved in the Covered Material except as expressly granted below.
+
+1. Scope
+"Covered Material" means only the original code and documentation contributed
+by the submission authors in this review package that they have the right to
+license and that are not subject to a separate license or a prior open-source
+license grant. This license does not apply to third-party code, datasets,
+pretrained models, or other separately licensed material.
+
+2. Permission for peer review
+The authors grant reviewers, editors, program committee members, and other
+persons authorized by the publication venue a non-exclusive, royalty-free,
+non-transferable permission to access, inspect, copy, execute, and locally
+modify the Covered Material solely to evaluate the accompanying submission,
+including reproducing experiments and verifying its claims. Sharing within
+the venue's authorized review process is permitted for that purpose.
+
+3. Restrictions
+Except as permitted above or required by applicable law, no permission is
+granted to publish, publicly redistribute, sublicense, commercialize, deploy,
+or use the Covered Material for research or other purposes unrelated to the
+review of this submission. Recipients must handle the Covered Material in
+accordance with the venue's confidentiality and anonymity requirements and
+must retain this notice in copies made under this license.
+
+4. Duration and review records
+The permission in Section 2 lasts for the submission's review process,
+including any associated revision or appeal. Afterward, recipients must cease
+active use under this license. Copies may be retained as required by the
+venue's review-record policies or applicable law, but retention does not
+authorize unrelated use or disclosure.
+
+5. Third-party and pre-existing rights
+Separate licenses and required notices remain applicable to their respective
+materials, including the Apache License 2.0 text retained at TQNet/LICENSE.
+This license does not revoke, narrow, or replace rights already granted under
+another license. The presence of this file does not establish ownership of
+third-party material or certify completion of a license-provenance audit.
+
+6. Future releases
+Any future public release will be governed by the license accompanying that
+release. Acceptance of the paper does not automatically convert this review
+package into an open-source release or expand the permissions granted here.
+
+7. Disclaimer
+THE COVERED MATERIAL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE
+AUTHORS SHALL NOT BE LIABLE FOR CLAIMS OR DAMAGES ARISING FROM ITS USE.

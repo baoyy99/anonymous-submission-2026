@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "training_record": {
+    "enabled": true,
+    "trace_granularity": "epoch",
+    "record_training_time": true,
+    "record_peak_memory": true,
+    "record_failures": true,
+    "record_gradient_clipping": true,
+    "gradient_clip_max_norm": null,
+    "diagnostic_checkpoints": {
+      "enabled": true,
+      "steps": [],
+      "percentages": [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+      "dataset_train_samples": {
+        "ETTh1.csv": 8449,
+        "weather.csv": 36696,
+        "electricity.csv": 18221,
+        "traffic.csv": 12089
+      },
+      "include_optimizer_state": false,
+      "reuse_last_as_final": true,
+      "keep_best_and_final": true
+    }
+  },
+  "test_evaluation": {
+    "checkpoint": "best",
+    "split": "test",
+    "save_predictions": false,
+    "save_scaled_predictions": false,
+    "save_window_manifest": false,
+    "save_partition_artifacts": false,
+    "save_compatibility_npz": false
+  },
+  "processing": {
+    "chunk_samples": 32,
+    "margin_quantile_sample_cap": 1000000
+  },
+  "metrics": {
+    "modules": [
+      "point_metrics",
+      "quadrant_metrics",
+      "regional_behavior",
+      "shape_metrics",
+      "partition_diagnostics",
+      "resource_metrics"
+    ],
+    "point_average": ["micro", "channel_macro"],
+    "per_channel": false,
+    "per_horizon_step": false,
+    "save_per_sample_candidates": false
+  },
+  "gradient_diagnostics": {
+    "enabled": true,
+    "split": "validation",
+    "fixed_batch_index": 0,
+    "losses": ["mse", "mae", "quantile", "taq"],
+    "layer_group_profile": "TQNet/evaluation/configs/layers/itransformer.json",
+    "checkpoint_percentages": [20, 40, 60, 80, 100],
+    "include_best_checkpoint": true,
+    "gradient_reconstruction_tolerance": 0.00001,
+    "update_parameters": false,
+    "save_full_gradients": false
+  },
+  "convergence_replay": {
+    "enabled": true,
+    "split": "validation",
+    "checkpoint_glob": null,
+    "use_diagnostic_checkpoints": true,
+    "checkpoint_percentages": [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+    "align_by": "epoch"
+  },
+  "external_cost": {
+    "enabled": false
+  }
+}

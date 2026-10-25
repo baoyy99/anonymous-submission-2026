@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "test_evaluation": {
+    "save_predictions": true,
+    "save_scaled_predictions": false,
+    "save_window_manifest": true,
+    "save_partition_artifacts": true,
+    "save_compatibility_npz": true,
+    "compatibility_npz_max_bytes": 536870912
+  }
+}
